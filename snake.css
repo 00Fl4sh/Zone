@@ -44,4 +44,35 @@ body {
   button:hover {
     background-color: #b2dd31; 
   }
-  
+  /* Add this CSS to your existing snake.css file */
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  /* Adjust canvas size for smaller screens */
+  #gameCanvas {
+    width: 100%;
+    max-width: 400px; /* Limit canvas width on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  #score {
+    font-size: 18px; /* Reduce font size for smaller screens */
+  }
+
+  .mobileControls {
+    display: block; /* Display arrow buttons vertically on smaller screens */
+    margin-top: 10px; /* Adjust top margin */
+    text-align: center;
+  }
+
+  .mobileControls button {
+    font-size: 20px; /* Increase font size for arrow buttons */
+    width: 50px; /* Adjust button width */
+    height: 50px; /* Adjust button height */
+    margin: 5px;
+  }
+}
