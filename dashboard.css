@@ -1,0 +1,48 @@
+/* dashboard.css */
+
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-image: url("./alien-3233076_1280.jpg");
+}
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    /* margin-top: 50px; Adjust the top margin for better alignment */
+  }
+  
+  li {
+    margin: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffcc6f;
+    font-weight: bold;
+    font-size: 64px;
+
+    
+  }
+  a:hover {
+    color: rgb(245, 136, 97);
+    text-decoration: underline;
+    font-size: 78px;
+  }
+  .background-container{
+    margin: 100px auto;
+    width: 600px;
+    height: 250px;
+    border-radius: 14px 14px 0px 0px ;
+    text-shadow: 5px -3px dimgrey;
+
+  }
+  .heading1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color:whitesmoke;
+    width:640px;
+    margin-left:30%;
+}
