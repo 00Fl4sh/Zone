@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake Game</title>
-   <link rel="stylesheet" href="./snake.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./snake.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Snake Game</h1>
-        <canvas id="gameCanvas" width="800" height="400"></canvas>
-        <div id="score">Score: 0</div>
-        <div id="gameOver">
-            <h2>Game Over!</h2>
-            <p>Your Score: <span id="finalScore">0</span></p>
-            <button id="playAgain">Play Again</button>
-            <button id="resetGame">Reset Game</button>
+      <h1>Snake Game</h1>
+      <canvas id="gameCanvas" width="800" height="400"></canvas>
+      <div id="score">Score: 0</div>
+      <div id="gameOver">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="finalScore">0</span></p>
+        <button id="playAgain">Play Again</button>
+        <button id="resetGame">Reset Game</button>
+    </div>
+        <!-- Add these buttons within the "container" div -->
+        <div class="mobileControls">
+          <button id="upButton">↑</button>
+          <div>
+            <button id="leftButton">←</button>
+            <button id="rightButton">→</button>
+          </div>
+          <button id="downButton">↓</button>
         </div>
-        <div class="speedControls">
-            <button class="speedButton" id="slowSpeed">Slow</button>
-            <button class="speedButton" id="mediumSpeed">Medium</button>
-            <button class="speedButton" id="fastSpeed">Fast</button>
-        </div>
+
+      <div class="speedControls">
+        <button class="speedButton" id="slowSpeed">Slow</button>
+        <button class="speedButton" id="mediumSpeed">Medium</button>
+        <button class="speedButton" id="fastSpeed">Fast</button>
+      </div>
     </div>
     <script src="./snake.js"></script>
-</body>
+  </body>
 </html>
