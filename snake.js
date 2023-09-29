@@ -15,6 +15,23 @@ const speedLevels = {
   medium: 200,
   fast: 100,
 };
+// Add event listeners for arrow buttons
+document.getElementById("upButton").addEventListener("click", () => {
+  if (direction !== "down") direction = "up";
+});
+
+document.getElementById("leftButton").addEventListener("click", () => {
+  if (direction !== "right") direction = "left";
+});
+
+document.getElementById("rightButton").addEventListener("click", () => {
+  if (direction !== "left") direction = "right";
+});
+
+document.getElementById("downButton").addEventListener("click", () => {
+  if (direction !== "up") direction = "down";
+});
+
 
 // Default speed level
 let currentSpeed = speedLevels.medium;
