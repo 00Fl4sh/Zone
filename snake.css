@@ -1,86 +1,47 @@
 body {
-  /* font-family: Arial, sans-serif; */
-  background-color: #f0f0f0;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  transition: background-color 0.3s ease;
-}
-/* Add this CSS to your existing snake.css file */
-
-.mobileControls {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.mobileControls button {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  margin: 5px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.mobileControls button:hover {
-  background-color: #0056b3;
-}
-
-h1 {
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-#board {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  gap: 5px;
-  margin: 20px auto;
-  width: 310px;
-  transition: transform 0.3s ease;
-}
-
-.cell {
-  width: 100px;
-  height: 100px;
-  font-size: 80px;
-  text-align: center;
-  vertical-align: middle;
-  border: 1px solid #333;
-  cursor: pointer;
-  background-color: #fff;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.cell:hover {
-  background-color: #f0f0f0;
-}
-
-.cell:nth-child(3n) {
-  /* border-right: none; */
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-  background-color: #555;
-  transform: scale(1.05); /* Add a scaling effect on hover */
-}
-
-#message {
-  color: #333;
-  font-size: 30px;
-  margin-top: 10px;
-  transition: color 0.3s ease;
-}
+    /* font-family: Arial, sans-serif; */
+    text-align: center;
+    background-color: #d4d5ca; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin-top: 20px; 
+  }
+  
+  #gameCanvas {
+    border: 2px solid #e1ff4a;
+    margin: 0 auto;
+    display: block; 
+    background-color: #fff;
+  }
+  
+  #score {
+    font-size: 20px; 
+    margin-top: 20px;
+  }
+  
+  #gameOver {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: rgb(232, 49, 49); 
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3a424b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #b2dd31; 
+  }
+  
